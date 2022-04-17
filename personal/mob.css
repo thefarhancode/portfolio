@@ -1,0 +1,138 @@
+body{
+    background: #fafeff;
+}
+/* Navigation*/
+.topnav h2{
+    font-size: 1.2rem;
+    margin-left: 1%;
+}
+.checkbtn{
+    font-size: 1.2rem;
+}
+
+/* Home-Section */
+.text{
+    margin: 0;
+   padding: 20px;
+}
+.text h1{
+    font-size: 1.5rem;
+    width: 260px;
+    padding-top: 5%;
+    margin: 30px auto;
+}
+.text h1::after{
+    display: block;
+    margin: 10px;
+}
+.text p{
+    width: 260px;
+    margin: 5px auto;
+}
+.text .sm{
+    margin: 25px auto;
+    width: 250px;
+    font-size: .8rem;
+}
+.text .sm i{
+    margin: 15px 8px;
+   font-size: 1rem;
+}
+.text  button{      
+    width: 150px;
+    display: block;
+    font-size: 1rem;
+    margin: 30px auto;
+}
+
+/* About-Section */
+.abt .profile img{
+    width: 230px;
+    height: 270px;
+}
+.about-section h1{
+    margin-top: 25%;
+    color: #000000;
+    font-size: 1.8rem;
+}
+.abt .bio{
+    border-radius: 5px 5px 0px 0px;
+    margin: 10px 10px;
+ }
+.abt .bio h2{
+    padding: 10px;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+}
+.abt .bio p{
+    padding: 20px;
+}
+.abt .bio ul{
+    width: 270px;
+    margin: 0 auto;
+    padding: 5px;
+}
+.abt .bio ul li{
+    list-style: none;
+    margin: 0 10px;
+    font-size: .9rem;
+}
+.abt .bio .rsm{
+    float: none;
+    width: 160px;
+    font-size: 1rem;
+}
+
+
+/* Services-Section */
+.services-section .srvc{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.services-section .srvc .srvce i{
+    font-size: 3rem;
+}
+
+/* Education-Section */
+.edct-section .educat{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Contact-Section */
+.contact-section .ctct{
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.contact-section .ctct .my-details{  
+    width: 220px;
+    font-size: 1.2rem;
+}
+.contact-section .ctct .cstmr-details{
+    margin: 10% auto;  
+    width: 220px;
+    font-size: 1.2rem;
+}
+.contact-section .ctct .my-details h2, .cstmr-details h2{
+   width: 200px;
+   font-size: 1.2rem;
+}
+.contact-section .ctct .my-details p{
+    width: 200px;
+    font-size: 1rem;
+}
+.contact-section .ctct .cstmr-details input, textarea{
+    margin: 20px auto;
+    width: 200px;
+    padding: 5px 0px;
+    font-size: 1rem;
+ }
+.contact-section .ctct .cstmr-details .btn{
+    width: 100px;
+    margin: 10px auto;
+}
+
+/* Footer-Section*/
+footer{
+    font-size: .8rem;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,506 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'M PLUS 1 Code', sans-serif;
+    text-decoration: none;
+}
+.topnav{
+    background: #dad8db;
+    box-shadow: 0px 5px 2px #dad8db;
+    width: 100%;
+    align-items: center;
+    height: 60px;
+    position: sticky;
+    top: 0%;
+}
+.topnav h2{
+    float: left;
+    font-weight: 700;
+    line-height: 60px;
+    color: #003952;
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    margin-left: 4%;
+}
+.topnav ul{
+    margin: 0px 30px;
+    line-height: 60px;
+    float: right;
+}
+.topnav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;   
+}
+.topnav ul li a{
+    padding: 5px 10px;
+    color: #052b2b;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all .5s;
+}
+.topnav ul li a:hover{
+    color: #5e727e;
+}
+.checkbtn{
+    float: right;
+    margin: 0px 15px;
+    line-height: 60px;
+    font-size: 1.4rem;
+    color: #023f3f;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media screen and (max-width: 950px) {
+    ul li a{
+        font-size: .9rem;
+    }
+    h2{
+        padding-left: 30px;
+    }
+}
+@media screen and (max-width:880px) {
+    .topnav ul li{
+        display: none;
+    }
+    .topnav h2{
+        font-size: 1.4rem;
+        padding-left: 20px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    #check:checked ~ .checkbtn i::before{
+        content: "\f00d";
+    }
+    .topnav ul {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        left: -120%;
+        background: #dad8db;
+        top: 60px;
+        padding-top: 10px;
+        transition: all .8s ease-in-out;
+    }
+    .topnav ul li{
+        margin: 15px 0px;
+        display: block;
+    }
+    .topnav ul li a{
+        color: #00212e;
+        font-weight: 500;
+        font-size: 1.2rem;
+        padding: 10px 15px;
+        letter-spacing: 2px;
+        font-family:  monospace;
+        transition: all .4s;
+    }
+    .topnav ul li a:hover{
+        color: #fff;
+        background: black;
+        border-radius: 10px;
+        box-shadow: 0px 5px 10px #838383;
+    }
+    #check:checked ~ ul{
+        left: 0%;
+    }
+
+    .text{
+        padding: 0px 20px;
+    }
+
+    .about-section{
+        margin-top: 5%;
+    }
+    
+}
+
+/* -Home-Section- */
+.home-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://images.unsplash.com/photo-1629905679177-4c4e2623654f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1836&q=80) no-repeat center center/cover;
+}
+.text{
+    width: 100%;
+    text-align: center;
+}
+.text h1{
+    text-shadow: 1px 1px 2px #000000;
+    font-size: 2.6rem;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+.text h1::after{
+   content:"TheFarhanCode";
+   color: #8b0a0a; 
+   animation: texter 8s step-start infinite;
+}
+@keyframes texter {
+    25%{
+        content: 'A Developer';
+        color: #ff8254;
+    }
+    50%{
+        content: 'A Designer';
+        color: #85bb85;
+    }
+    75%{
+        content: 'A YouTuber';
+        color: #ff0000;
+    }
+}
+.text p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.text .sm{
+    margin: 30px 0;
+    letter-spacing: 1px;
+}
+.text .sm i{
+    margin: 15px 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #237381;;
+    transition: all .4s;
+}
+.text .sm i:hover{
+    color:#000; 
+    transform: scale(1.4);
+}
+.text button{
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin: 30px 30px;
+    padding: 5px 12px;
+    text-shadow: .5px .5px 2px #000;
+    box-shadow: 0px 5px 10px #383838;
+    border: 2px solid #024c52;
+    border-radius: 5px;
+    transition: .4s;
+}
+.contact-btn{
+    background: #024c52;
+    color: white;
+}
+.contact-btn:hover{
+    background: #fff;
+    color: #024c52;
+}
+.cv-btn{
+    background: #fff;
+    color: #024c52;
+}
+.cv-btn:hover{
+    background: #024c52;
+    color: white;
+}
+
+/* About-Section */
+.about-section{
+    text-align: center;
+    margin-top: 15%;
+}
+.about-section h1{
+    font-size: 2.4rem;
+    padding: 20px;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px;
+    text-transform: uppercase;
+}
+.abt{
+    background: #f4f5f5;
+    justify-content: center;
+    display: flex;
+    padding: 10% 2%;
+    margin: 5% 0;
+    flex-wrap: wrap-reverse;
+}
+.abt .bio{
+   border-radius: 10px;
+   width: 700px;
+   background: #dde8eb;
+   box-shadow: 0px 0px 5px #9e9e9e;
+   margin: 25px 20px;
+}
+.abt .bio h2{
+    padding: 20px;
+    text-shadow: -1px 1px 2px #003038;
+    letter-spacing: 3px;
+    font-family: sans-serif;
+    color: #028888;
+    text-align: center;
+}
+.abt .bio p{
+    padding: 20px;
+    letter-spacing: .5px;
+    font-family: sans-serif;
+    margin: 10px 0;
+}
+.abt .bio ul{
+    display: flex;
+    margin-left: 5px;
+    justify-content: center;
+}
+.abt .bio ul li{
+    margin: 0px 20px;
+}
+.abt .bio .rsm{
+    float: right;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 30px;
+    font-size: 1rem;
+}
+.abt .bio .rsm:hover{
+    background-color: #d4d4d4;
+}
+.abt .profile{
+   margin: 20px auto;
+   border-radius: 50px;
+}
+.abt .profile img{
+    width: 420px;
+    height: 480px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px #000;
+}
+
+/* Skills */
+.skls{
+    width: 80%;
+    padding: 30px;
+    box-shadow: 0px 10px 10px #cfcfcf;
+    border-radius: 0px 0px 10px 10px;
+    background: linear-gradient(180deg, #fff, #f0e9dc);
+    box-sizing: border-box;
+    margin: 10% auto;
+}
+.skls h2{
+    margin: 0 auto;
+    padding: 0;
+    width: 140px;
+    font-size: 2rem;
+    color: #ff6161;
+    padding: 5px;
+    text-shadow: 1px 1px 2px #361818;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 4px solid;
+    border-radius: 10px;
+}
+.skls .skillbox{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 40px 0;
+}
+.skls .skillbox p{
+    color: #003b5e;
+    text-transform: uppercase;
+    margin: 0 0 10px 10px;
+    padding: 0px;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 2px;
+}
+.skillbox p:nth-child(2){
+    float: right;
+    position: relative;
+    top: -25px;
+}
+.skls .skillbox .skill{
+    background: #011e1f;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+.skillbox .skill .skill-level{
+    background: #1da7ac;
+    width: 100%;
+    height: 8px;
+    border-radius: 50px;
+    animation: width 1s 1 linear;
+}
+@keyframes width {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* Service-Section*/
+
+.services-section{
+    margin-top: 15%;
+   justify-content: center;
+}
+.services-section .srvc{
+    margin-top: 5%;
+    padding: 5% 8%;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    background: #00363d;
+    box-shadow: 0px 2px 5px #000000;
+    height: 100%;
+}
+.services-section .srvc .srvce{
+    margin: 30px auto;
+    background: #fff;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0px -5px 10px #000;
+
+}
+.services-section .srvc .srvce i{
+    color: #2093b9;
+    font-size: 4rem;
+    text-shadow: 0px 2px 5px #012a36;
+    padding: 10px;
+}
+.services-section .srvc .srvce h3{
+    color: #01465e;
+    font-size: 1.6rem;
+    text-shadow: .5px .5px 1px #012a36;
+    padding: 10px 0px;
+}
+
+/* Education-Section */
+.edct-section{
+    margin-top: 15%;
+    justify-content: center;
+}
+.edct-section .educat{
+    margin-top: 5%;
+    padding:5% 8%;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    height: 100%;
+    background: #ecf0f1;
+    box-shadow: 0px 2px 5px #a3a3a3;
+}
+.edct-section .educat .edt{
+    margin: 30px auto;
+    background: #f7feff;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    padding: 30px;
+    transition: all .6s;
+    background: #d1d1d1;
+    box-shadow: -5px 0px 10px #7e7e7e;
+}
+.edct-section .educat .edt h2{
+    font-size: 1.8rem;
+    padding: 10px 0px;
+    text-shadow: -1px -1px 2px #3d3d3d;
+    color: #868686;
+    letter-spacing: 3px;
+}
+.edct-section .educat .edt h3{
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 2px #000000;
+    padding: 10px 0px;
+    color: #05bfe0;
+}
+
+/* Contact-Section */
+.contact-section{
+    margin-top: 15%;
+    justify-content: center;
+}
+.contact-section .ctct{
+    margin-top: 5%;
+    padding: 5%  8%;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    height: 100%;
+    background: #182024;
+}
+.contact-section .ctct .my-details{  
+    margin: 0 auto;  
+    width: 500px;
+    font-size: 1.2rem;
+}
+.contact-section .ctct .my-details h2{
+    color: #ffffff;
+    margin-bottom: 10%;
+    padding: 15px 10px;
+    font-family: monospace;
+}
+.contact-section .ctct .my-details p{
+   margin: 30px auto;
+   padding: 4% 6%;
+   background: #cfcfcf;
+   border-radius: 10px;
+   font-family: monospace;
+}
+.contact-section .ctct .my-details p i{
+    color: #2f8196;
+    margin: 0px 10px;
+}
+.contact-section .ctct .cstmr-details{
+   margin: 0 auto;  
+   background: #d1d1d1;
+   box-shadow: 0px 0px 10px;
+   padding: 10px 20px;
+   border-radius: 5px;
+}
+.contact-section .ctct .cstmr-details h2{
+    letter-spacing: 1px;
+    color: #1a4b52;
+    padding: 10px 0;
+}
+.contact-section .ctct .cstmr-details input, textarea{
+   display: block;
+   letter-spacing: 1px;
+   margin: 30px 10px;
+   width: 400px;
+   padding: 10px 0px;
+   font-size: 1.2rem;
+   text-align: center;
+   border-radius: 5px;
+   outline: none;
+   border: none;
+}
+.contact-section .ctct .cstmr-details .btn{
+    width: 140px;
+    font-weight: 600;
+    margin: 10px auto;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all .6s;
+}
+.contact-section .ctct .cstmr-details .btn:hover{
+    background: #167fa8;
+    color: #ffffff;
+}
+
+/* Footer-Section*/
+footer{
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 15px 10px;
+    font-family: monospace;
+    background: #12292c;
+    color: white;
+}
+footer strong{
+    color: #67e1ff;
+}
+
